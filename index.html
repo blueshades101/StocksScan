@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Screenshot Display</title>
+    <title>Full-Screen Image</title>
     <style>
-        img {
-            max-width: 100%;
-            height: auto;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .full-screen-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <h1>My Screenshot</h1>
-    <img src="Screenshot.jpg" alt="Screenshot">
+    <img src="screenshot.jpg" alt="Full-Screen Image" class="full-screen-img">
 </body>
 </html>
