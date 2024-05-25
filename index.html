@@ -1,26 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Live Screenshot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-to-Screen Image</title>
     <style>
-        body {
-            text-align: center;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
-        img {
-            width: 90%;
-            max-width: 1000px;
+        .full-screen-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
-    <h1>Live Screenshot</h1>
-    <img id="screenshot" src="screenshot.jpg" alt="Screenshot">
-    <script>
-        setInterval(function() {
-            document.getElementById('screenshot').src = 'screenshot.jpg?' + new Date().getTime();
-        }, 60000); // Refresh every minute
-    </script>
+    <img src="Screenshot.jpg" alt="Fit-to-Screen Image" class="full-screen-img">
 </body>
 </html>
