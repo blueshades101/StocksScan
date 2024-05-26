@@ -1,13 +1,11 @@
 image: alpine:latest
 
 pages:
-  before_script:
-  - ls -la
   script:
     - mkdir .public
     - cp -r * .public
   artifacts:
     paths:
-      - /builds/psetraders/stockscan
+      - public
   only:
     - main
