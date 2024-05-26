@@ -1,6 +1,9 @@
 image: alpine:latest
 
 pages:
+  before_script:
+  - ls -la  # List all files and directories in the working directory
+  - pwd     # Print the current working directory	
   script:
     - mkdir .public
     - cp -r * .public
