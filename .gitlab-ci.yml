@@ -8,6 +8,6 @@ pages:
     - cp -r * .public
   artifacts:
     paths:
-      - builds/psetraders/stockscan
+      - /builds/psetraders/stockscan
   only:
     - main
